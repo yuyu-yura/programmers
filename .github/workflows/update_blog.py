@@ -7,7 +7,7 @@ import os
 rss_url = 'https://api.velog.io/rss/@yuyu__yura'
 
 # 깃허브 레포지토리 경로
-repo_path = '.'
+repo_path = 'https://github.com/yuyu-yura/programmers'
 
 # 'velog-posts' 폴더 경로
 posts_dir = os.path.join(repo_path, 'velog-posts')
