@@ -15,12 +15,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+      # 버전 변경
 
     - name: Push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git push https://${{ secrets.GH_PAT }}@github.com/yuyu-yura/programmers.git
+        # 업로드 될 리포지토리 주소
 
     - name: Set up Python
       uses: actions/setup-python@v2
